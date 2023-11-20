@@ -6,6 +6,7 @@ import ComentariosComponent from "./components/ComentariosComponent.vue"
 import LoginComponent from "./components/LoginComponent.vue"
 import LogOutComponent from "./components/LogOutComponent.vue"
 import DatosUsuario from "./components/DatosUsuario.vue"
+import ComprasUsuario from "./components/ComprasUsuario.vue"
 
 const myRoutes = [
     {
@@ -34,6 +35,9 @@ const myRoutes = [
     }*/
     {
         path: "/datosusuario", component: DatosUsuario
+    },
+    {
+        path: "/comprasusuario", component: ComprasUsuario
     }
 ]
 

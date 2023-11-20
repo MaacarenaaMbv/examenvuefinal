@@ -1,5 +1,6 @@
 <template>
   <div>
+    <router-link to="/" class="btn btn-info">Back to home</router-link>
     <router-link :to="'/cubos/' + this.$route.params.marca" class="btn btn-success">Back</router-link>
     <h1>Cubo con id: {{this.$route.params.id}}</h1>
     <div v-if="cubo" :key="comentario" style="text-align: left; margin: 3em;">

@@ -40,7 +40,7 @@
                 <router-link class="dropdown-item" to="/datosusuario">Detalles Usuario</router-link>
             </li>
             <li>
-                <router-link class="dropdown-item" to="/logout">Compras Usuario</router-link>
+                <router-link class="dropdown-item" to="/comprasusuario">Compras Usuario</router-link>
             </li>
           </ul>
         </li>
@@ -56,9 +56,9 @@ const service = new ServiceCubos();
 export default {
     name: "MenuNavegacion",
     mounted() {
-        service.getMarcas().then(result => {
-            this.marcas = result;
-        })
+      service.getMarcas().then(result => {
+        this.marcas = result;
+      })
     },
     data() {
         return  {

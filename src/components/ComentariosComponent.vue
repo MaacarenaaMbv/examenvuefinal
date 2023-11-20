@@ -1,5 +1,6 @@
 <template>
   <div>
+    <router-link to="/" class="btn btn-info">Back to home</router-link>
     <router-link :to="'/cubos/' + this.$route.params.marca" class="btn btn-success">Back</router-link>
     <h1>
         Comentarios para el cubo {{ this.$route.params.id }}

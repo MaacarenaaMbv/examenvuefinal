@@ -8,6 +8,8 @@
         <h5 class="card-title">{{ cubo.nombre }}</h5>
         <p class="card-text">Marca: {{ cubo.marca }}</p>
         <h4 class="card-title" style="color:green">Precio: {{ cubo.precio }}</h4>
+        <router-link :to="'/detalles/' + cubo.idCubo + '/' + cubo.marca" class="btn btn-primary">Detalles</router-link>
+        <router-link :to="'/comentarios/' + cubo.idCubo + '/' + cubo.marca" class="btn btn-danger">Comentarios</router-link>
       </div>
     </div>
     </div>

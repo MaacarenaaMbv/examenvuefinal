@@ -27,12 +27,15 @@ export default {
       this.cubos = result;
     })
   },
-   /*updated() {
-   var marca = this.$route.params.marca
-    service.findCubosMarca(marca).then(result => {
-      this.cubos = result;
+  watch: {
+    '$route.params.marca'(nextVal, oldVal){
+      if (nextVal!=oldVal) {
+        service.findCubosMarca(this.$route.params.marca).then(result => {
+        this.cubos = result;
     })
-  },*/
+      }
+    }
+  },
   data() {
     return {
       cubos: [],
